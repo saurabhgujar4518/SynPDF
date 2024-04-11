@@ -9000,7 +9000,8 @@ begin
         FreeAndNil(P.fVCLCurrentMetaFile);
       end;
     end;
-  end;
+  end; 
+   FCanvas.FContents.FSaveAtTheEnd := false;
   inherited SaveToStreamDirectPageFlush;
 end;
 
